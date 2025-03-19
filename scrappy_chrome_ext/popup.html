@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>scrappy_chrome_ext</title>
+  <style>
+    #emails {
+      width: 300px;
+      height: 200px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-top: 10px;
+      overflow-y: auto; /* Ajoute la scrollbar */
+      max-height: 300px; /* Limite la hauteur */
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    span {
+      font-size: 16px;
+      cursor: pointer;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <button id="detecter">Check Emails</button>
+  <div id="emails"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
